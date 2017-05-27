@@ -13,6 +13,7 @@ public class TestTaker {
 		String input  = scanner.nextLine();
 		if(input.toUpperCase() == "TEST"){
 			System.out.println(creator.takeTest());
+			System.out.print("Your score was " + (String)creator.calculateScore);
 		}
 		else if(input.toUpperCase() == "QUIT"){
 			running = false;
