@@ -7,13 +7,17 @@ public class TestTaker {
 	Creator creator = new creator();
 	Reader reader = new reader();
 
+
 	Boolean running = true;
 	while(running = false){
 		System.out.println("Your inputs are test, create, and quit");
 		String input  = scanner.nextLine();
 		if(input.toUpperCase() == "TEST"){
 			System.out.println(creator.takeTest());
-			System.out.print("Your score was " + (String)creator.calculateScore);
+			System.out.println("Now type in the answers type your answers as letters separated by commas");
+			String input = scanner.nextLine();
+			System.out.print("Your score was " + Double.toString((creator.grade(input.toUpperCase())));
+
 		}
 		else if(input.toUpperCase() == "QUIT"){
 			running = false;
